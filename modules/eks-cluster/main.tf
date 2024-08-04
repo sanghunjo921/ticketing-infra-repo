@@ -106,6 +106,7 @@ resource "aws_ec2_tag" "private_subnet_karpenter_tag" {
 }
 
 // 퍼블릭 서브넷 태그
+// elb 키와 value를 넣어줘야 제대로 됨
 resource "aws_ec2_tag" "public_subnet_tag" {
   for_each    = toset(local.public_subnets)
   resource_id = each.value
