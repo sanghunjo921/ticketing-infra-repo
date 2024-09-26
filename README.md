@@ -1,4 +1,4 @@
-# fast-test-infra-repo
+# infra-repo
 terraform code repo
 
 폴더 구조 
